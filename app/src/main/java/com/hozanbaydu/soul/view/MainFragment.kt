@@ -47,8 +47,6 @@ class MainFragment : Fragment() {
 
         )
 
-        println("2")
-
 
     }
 
@@ -115,14 +113,11 @@ class MainFragment : Fragment() {
         val su=FoodsModel("Su","", R.drawable.soul)
 
 
-
-
-
         compositeDisposable.add(
             foodDao.insert(etliMakarnaKavurmasi,tavukluMakarnaKavurmasi,sebzeliMakarnaKavurmasi,kungpao,gyoza,rabokki,citirKanat
                 ,kemiksizcitir,generaltso,ramen,bibimbap,mandu,kimchi,kokakola,kokakolazero,sprite,fanta,soda,su) //place daoya veri ekler.
-                .subscribeOn(Schedulers.io()) //işlemin yapılacağı thread.
-                .observeOn(AndroidSchedulers.mainThread())  //gözlemci thread.
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(this::handleResponse1)
 
         )

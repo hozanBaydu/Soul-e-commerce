@@ -13,7 +13,6 @@ import com.hozanbaydu.soul.model.FoodsModel
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.schedulers.Schedulers
-import kotlinx.android.synthetic.main.fragment_food_details.view.*
 
 class FoodDetailsFragment : Fragment() {
     private var _binding: FragmentFoodDetailsBinding? = null
@@ -31,7 +30,7 @@ class FoodDetailsFragment : Fragment() {
 
 
 
-        var foodId=FoodDetailsFragmentArgs.fromBundle(bundle = requireArguments()).uuid
+        val foodId=FoodDetailsFragmentArgs.fromBundle(bundle = requireArguments()).uuid
 
         compositeDisposable.add(
             foodDao.getFood(foodId)
@@ -62,7 +61,7 @@ class FoodDetailsFragment : Fragment() {
     }
 
     fun handleDetailsResponse(Food:List<FoodsModel> ){
-        var a=Food.get(0)
+        val a=Food.get(0)
         binding.textView5.text=a.details
         binding.imageView.setImageResource(a.image)
     }
