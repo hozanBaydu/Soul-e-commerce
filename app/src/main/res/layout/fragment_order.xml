@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="1dp"
+        android:shadowRadius="@integer/material_motion_duration_short_1"
+        app:cardBackgroundColor="@color/floatingbutton_background"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="@dimen/cardview_default_radius"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="@dimen/cardview_default_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/etliLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Etli Makarna Kavurmasi"
+                    android:textSize="20dp"
+                    android:textColor="@color/red">
+
+                </TextView>
+
+
+                <EditText
+                    android:id="@+id/etlimakarnakavurmasıText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="@android:color/transparent"
+                    android:drawingCacheQuality="auto"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:lineSpacingExtra="8sp"
+                    android:text="1"
+                    android:textSize="25dp">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tavukluLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tavuklu Makarna Kavurmasi"
+                    android:textSize="20dp"
+                    android:textColor="@color/red"
+                    android:background="@color/ekk_background">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/tavuklumakarnakavurmasıText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number"
+                    >
+
+                </EditText>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/sebzeliLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sebzeli Makarna Kavurmasi"
+                    android:textSize="20dp"
+                    android:textColor="@color/red">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/sebzelimakarnakavurmasıText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number">
+
+                </EditText>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/kungpaoLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kung Pao"
+                    android:textSize="20dp"
+                    android:textColor="@color/red"
+                    android:background="@color/ekk_background">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/kungpaoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number">
+
+                </EditText>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/gyozaLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gyoza"
+                    android:textSize="20dp"
+                    android:textColor="@color/red">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/gyozaText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number">
+
+                </EditText>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/rabokkiLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rabokki"
+                    android:textSize="20dp"
+                    android:textColor="@color/red"
+                    android:background="@color/ekk_background">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/rabokkiText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/citirkanatLayout" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Çıtır Kanat"
+                    android:textSize="20dp"
+                    android:textColor="@color/red">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/citirkanatText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number">
+
+                </EditText>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/kemiksizcitirLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kemiksiz Çıtır"
+                    android:textSize="20dp"
+                    android:textColor="@color/red"
+                    android:background="@color/ekk_background">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/kemiksizcitirText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/generaltsoLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General Tso"
+                    android:textSize="20dp"
+                    android:textColor="@color/red">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/generaltsoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number">
+
+                </EditText>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/ramenLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ramen"
+                    android:textColor="@color/red"
+                    android:textSize="20dp"
+                    android:background="@color/ekk_background">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/ramenText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/bibimbapLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bibimbap"
+                    android:textSize="20dp"
+                    android:textColor="@color/red">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/bibimbapText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number">
+
+                </EditText>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/manduLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mandu"
+                    android:textSize="20dp"
+                    android:textColor="@color/red"
+                    android:background="@color/ekk_background">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/manduText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textSize="25dp">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/kimchiLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kimchi"
+                    android:textSize="20dp"
+                    android:textColor="@color/red">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/kimchiText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textSize="25dp">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/kokakolaLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ekk_background"
+                    android:text="Koka Kola"
+                    android:textColor="@color/red"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/kokakolaText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number">
+
+                </EditText>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/kokakolazeroLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Kokakola Zero"
+                    android:textColor="@color/red"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/kokakolazeroText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textSize="25dp">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/spriteLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sprite"
+                    android:textSize="20dp"
+                    android:textColor="@color/red"
+                    android:background="@color/ekk_background">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/spriteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/fantaLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fanta"
+                    android:textColor="@color/red"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/fantaText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number">
+
+                </EditText>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/sodaLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ekk_background"
+                    android:text="Soda"
+                    android:textColor="@color/red"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/sodaText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textSize="25dp">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/suLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Su"
+                    android:textSize="20dp"
+                    android:textColor="@color/red">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/suText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textSize="25dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number">
+
+                </EditText>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:src="@drawable/send_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
