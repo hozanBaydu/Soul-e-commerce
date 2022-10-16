@@ -1,4 +1,4 @@
-package com.hozanbaydu.soul
+package com.hozanbaydu.soul.view
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -12,8 +12,9 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
+import com.hozanbaydu.soul.R
 import com.hozanbaydu.soul.databinding.FragmentMainBinding
-import com.hozanbaydu.soul.model.FoodsAdapter
+import com.hozanbaydu.soul.FoodsAdapter
 import com.hozanbaydu.soul.model.FoodsDao
 import com.hozanbaydu.soul.model.FoodsDataBase
 import com.hozanbaydu.soul.model.FoodsModel
@@ -64,48 +65,54 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         val etliMakarnaKavurmasiDetails="El yapımı erişte, dana eti, kırmızı biber, yeşil biber, yeşil soğan, sarımsak, zencefil, özel baharat karışımı"
-        val etliMakarnaKavurmasi=FoodsModel("etliMakarnaKavurmasi",etliMakarnaKavurmasiDetails,R.drawable.etlimakarnakavurmasi)
+        val etliMakarnaKavurmasi=FoodsModel("etliMakarnaKavurmasi",etliMakarnaKavurmasiDetails,
+            R.drawable.etlimakarnakavurmasi
+        )
 
         val tavukluMakarnaKavurmasiDetails="El yapımı erişte, tavuk eti, kırmızı biber, yeşil biber, yeşil soğan, sarımsak, zencefil, özel baharat karışımı"
-        val tavukluMakarnaKavurmasi=FoodsModel("tavukluMakarnaKavurması",tavukluMakarnaKavurmasiDetails,R.drawable.tavuklumakarnakavurmasi)
+        val tavukluMakarnaKavurmasi=FoodsModel("tavukluMakarnaKavurması",tavukluMakarnaKavurmasiDetails,
+            R.drawable.tavuklumakarnakavurmasi
+        )
 
         val sebzeliMakarnaKavurmasiDetails="El yapımı erişte, kırmızı biber, yeşil biber, yeşil soğan, sarımsak, zencefil, özel baharat karışımı"
-        val sebzeliMakarnaKavurmasi=FoodsModel("sebzeli Makarna Kavurmasi",sebzeliMakarnaKavurmasiDetails,R.drawable.sebzelimakarnakavurmasi)
+        val sebzeliMakarnaKavurmasi=FoodsModel("sebzeli Makarna Kavurmasi",sebzeliMakarnaKavurmasiDetails,
+            R.drawable.sebzelimakarnakavurmasi
+        )
 
         val kungpaoDetails="Pirinç pilav, tavuk göğsü, kırmızı biber, Yeşil biber, Yeşil soğan, Salatalık, Yer fıstığı, özel baharat karışımı"
-        val kungpao=FoodsModel("kungpao",kungpaoDetails,R.drawable.kungpao)
+        val kungpao=FoodsModel("kungpao",kungpaoDetails, R.drawable.kungpao)
 
         val gyozaDetails="Elle Açılmış yufka, Dana kıyma, özel baharat karışımı"
-        val gyoza=FoodsModel("Gyoza",gyozaDetails,R.drawable.gyoza)
+        val gyoza=FoodsModel("Gyoza",gyozaDetails, R.drawable.gyoza)
 
         val rabokkiDetails="Pirinç keki"
-        val rabokki=FoodsModel("Rabokki",rabokkiDetails,R.drawable.rabokki)
+        val rabokki=FoodsModel("Rabokki",rabokkiDetails, R.drawable.rabokki)
 
-        val citirKanat=FoodsModel("Çıtır Kanat","",R.drawable.citirkanat)
+        val citirKanat=FoodsModel("Çıtır Kanat","", R.drawable.citirkanat)
 
-        val kemiksizcitir=FoodsModel("Kemiksiz Çıtır","",R.drawable.kemiksizcitir)
+        val kemiksizcitir=FoodsModel("Kemiksiz Çıtır","", R.drawable.kemiksizcitir)
 
-        val generaltso=FoodsModel("General Tso","",R.drawable.generaltso)
+        val generaltso=FoodsModel("General Tso","", R.drawable.generaltso)
 
-        val ramen=FoodsModel("Ramen","",R.drawable.ramen)
+        val ramen=FoodsModel("Ramen","", R.drawable.ramen)
 
-        val bibimbap=FoodsModel("Bibimbap","",R.drawable.bibimbap)
+        val bibimbap=FoodsModel("Bibimbap","", R.drawable.bibimbap)
 
-        val mandu=FoodsModel("Mandu","",R.drawable.mandu)
+        val mandu=FoodsModel("Mandu","", R.drawable.mandu)
 
-        val kimchi=FoodsModel("Kimchi","",R.drawable.soul)
+        val kimchi=FoodsModel("Kimchi","", R.drawable.soul)
 
-        val kokakola=FoodsModel("kokakola","",R.drawable.soul)
+        val kokakola=FoodsModel("kokakola","", R.drawable.soul)
 
-        val kokakolazero=FoodsModel("Kokakola-Zero","",R.drawable.soul)
+        val kokakolazero=FoodsModel("Kokakola-Zero","", R.drawable.soul)
 
-        val sprite=FoodsModel("Sprite","",R.drawable.soul)
+        val sprite=FoodsModel("Sprite","", R.drawable.soul)
 
-        val fanta=FoodsModel("Fanta","",R.drawable.soul)
+        val fanta=FoodsModel("Fanta","", R.drawable.soul)
 
-        val soda=FoodsModel("Soda","",R.drawable.soul)
+        val soda=FoodsModel("Soda","", R.drawable.soul)
 
-        val su=FoodsModel("Su","",R.drawable.soul)
+        val su=FoodsModel("Su","", R.drawable.soul)
 
 
 
@@ -332,7 +339,7 @@ class MainFragment : Fragment() {
 
 
         binding.recyclerview.layoutManager=LinearLayoutManager(requireContext())
-        val foodsAdapter=FoodsAdapter(list)
+        val foodsAdapter= FoodsAdapter(list)
         binding.recyclerview.adapter=foodsAdapter
 
         println("3")

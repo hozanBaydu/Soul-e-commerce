@@ -1,25 +1,22 @@
-package com.hozanbaydu.soul.model
+package com.hozanbaydu.soul
 
 
 import android.content.Context
 import android.content.SharedPreferences
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.AnimationUtils
 import android.widget.Toast
-import androidx.core.widget.addTextChangedListener
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
-import com.hozanbaydu.soul.MainFragmentDirections
-import com.hozanbaydu.soul.R
-import com.hozanbaydu.soul.databinding.RecyclerRowBinding
-import kotlinx.android.synthetic.main.recycler_row.view.*
-import kotlinx.coroutines.NonDisposableHandle.parent
-import kotlin.coroutines.coroutineContext
 
-class FoodsAdapter (val artList:MutableList<FoodsModel>): RecyclerView.Adapter<FoodsAdapter.FoodsHolder>(),FoodsClickListener {
+import com.hozanbaydu.soul.databinding.RecyclerRowBinding
+import com.hozanbaydu.soul.model.FoodsModel
+import com.hozanbaydu.soul.view.MainFragmentDirections
+import kotlinx.android.synthetic.main.recycler_row.view.*
+
+class FoodsAdapter (val artList:MutableList<FoodsModel>): RecyclerView.Adapter<FoodsAdapter.FoodsHolder>(),
+    FoodsClickListener {
 
     lateinit var sharedPreferences: SharedPreferences
 

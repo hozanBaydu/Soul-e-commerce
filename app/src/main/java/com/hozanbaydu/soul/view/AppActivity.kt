@@ -1,11 +1,10 @@
-package com.hozanbaydu.soul
+package com.hozanbaydu.soul.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.hozanbaydu.soul.databinding.ActivityAppBinding
-import com.hozanbaydu.soul.databinding.ActivityMainBinding
 
 class AppActivity : AppCompatActivity() {
     private lateinit var binding:ActivityAppBinding
@@ -19,7 +18,7 @@ class AppActivity : AppCompatActivity() {
 
     fun back(view: View){
 
-        val intent=Intent(this,MainActivity::class.java)
+        val intent=Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()
 

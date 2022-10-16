@@ -1,4 +1,4 @@
-package com.hozanbaydu.soul
+package com.hozanbaydu.soul.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,13 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.room.Room
 import com.hozanbaydu.soul.databinding.FragmentFoodDetailsBinding
-import com.hozanbaydu.soul.databinding.FragmentMainBinding
 import com.hozanbaydu.soul.model.FoodsDao
 import com.hozanbaydu.soul.model.FoodsDataBase
 import com.hozanbaydu.soul.model.FoodsModel
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
-import io.reactivex.rxjava3.core.Completable
-import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.schedulers.Schedulers
 import kotlinx.android.synthetic.main.fragment_food_details.view.*

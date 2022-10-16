@@ -1,4 +1,4 @@
-package com.hozanbaydu.soul
+package com.hozanbaydu.soul.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +11,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.hozanbaydu.soul.R
 import com.hozanbaydu.soul.databinding.ActivityMapsBinding
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
@@ -40,7 +41,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     fun mapBack(view: View){
-        var intent= Intent(this,MainActivity::class.java)
+        var intent= Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()
     }

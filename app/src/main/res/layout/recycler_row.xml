@@ -12,7 +12,7 @@
 
              <variable
             name="listener"
-            type="com.hozanbaydu.soul.model.FoodsClickListener" />
+            type="com.hozanbaydu.soul.FoodsClickListener" />
 
 
     </data>

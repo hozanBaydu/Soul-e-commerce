@@ -1,4 +1,4 @@
-package com.hozanbaydu.soul
+package com.hozanbaydu.soul.view
 
 import android.content.Context
 import android.content.Intent

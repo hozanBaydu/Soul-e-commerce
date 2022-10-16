@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/foodDetailsFragment"
-        android:name="com.hozanbaydu.soul.FoodDetailsFragment"
+        android:name="com.hozanbaydu.soul.view.FoodDetailsFragment"
         android:label="fragment_food_details"
         tools:layout="@layout/fragment_food_details" >
         <argument
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.hozanbaydu.soul.MainFragment"
+        android:name="com.hozanbaydu.soul.view.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -44,7 +44,7 @@
     </fragment>
     <fragment
         android:id="@+id/orderFragment"
-        android:name="com.hozanbaydu.soul.OrderFragment"
+        android:name="com.hozanbaydu.soul.view.OrderFragment"
         android:label="fragment_order"
         tools:layout="@layout/fragment_order" >
         <action

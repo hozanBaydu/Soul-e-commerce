@@ -1,10 +1,11 @@
-package com.hozanbaydu.soul
+package com.hozanbaydu.soul.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.animation.AnimationUtils
+import com.hozanbaydu.soul.R
 import com.hozanbaydu.soul.databinding.ActivityMainBinding
 
 
@@ -31,13 +32,13 @@ class MainActivity : AppCompatActivity() {
 
     fun infoButton(view: View){
 
-        val intent=Intent(this,AppActivity::class.java)
+        val intent=Intent(this, AppActivity::class.java)
         startActivity(intent)
         finish()
     }
 
     fun mapButton(view: View){
-        val intent=Intent(this,MapsActivity::class.java)
+        val intent=Intent(this, MapsActivity::class.java)
         startActivity(intent)
         finish()
 
