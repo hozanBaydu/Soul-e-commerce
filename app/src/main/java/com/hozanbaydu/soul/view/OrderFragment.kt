@@ -239,9 +239,6 @@ class OrderFragment : Fragment() {
             val suTextControl=binding.suText.text.toString()
 
 
-
-
-
             if (etlimakarnaTextConctrol != "" && tavuklumakarnaTextConrol != "" && sebzelimakarnaTextControl != "" && kungpaoTextControl != ""
                 && gyozaTextControl != "" && rabokkiTextControl != "" && citirkanatTextControl != "" && kemiksizcitirTextControl !=""
                 && generaltsoTextControl!=""&& ramenTextControl!=""&& bibimbapTextControl!=""&&manduTextControl!=""
@@ -373,7 +370,7 @@ class OrderFragment : Fragment() {
         // Setting whatsapp package name
         intent.setPackage("com.whatsapp")
 
-        intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=905456053279&text="+message))
+        intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=905459301429&text="+message))
 
         // Give your message here
         intent.putExtra(Intent.EXTRA_TEXT, message)

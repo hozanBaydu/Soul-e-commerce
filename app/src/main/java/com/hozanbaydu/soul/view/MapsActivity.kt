@@ -25,7 +25,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         binding = ActivityMapsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
@@ -34,14 +34,14 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
-        // Add a marker in Sydney and move the camera
+
         val soul = LatLng(41.04402, 29.00364)
         mMap.addMarker(MarkerOptions().position(soul).title("Soul Asian Street Food").infoWindowAnchor(1f,1f))
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(soul,20f))
     }
 
     fun mapBack(view: View){
-        var intent= Intent(this, MainActivity::class.java)
+        val intent= Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()
     }
