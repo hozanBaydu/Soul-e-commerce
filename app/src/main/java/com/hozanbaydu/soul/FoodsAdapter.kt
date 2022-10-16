@@ -42,15 +42,11 @@ class FoodsAdapter (val artList:MutableList<FoodsModel>): RecyclerView.Adapter<F
         holder.binding.listener=this
 
 
-
-        // holder.setIsRecyclable(false)
-
-
         holder.binding.imageButton3.setOnClickListener {
 
 
-            var name =artList.get(position).name
-            var itemPosition=position.toString()
+            val name =artList.get(position).name
+            val itemPosition=position.toString()
             Toast.makeText(holder.binding.root.context,name+" Sepetten çıkarıldı.",Toast.LENGTH_SHORT).show()
 
 
@@ -67,8 +63,8 @@ class FoodsAdapter (val artList:MutableList<FoodsModel>): RecyclerView.Adapter<F
 
 
         holder.binding.imageButton2.setOnClickListener {
-            var a =artList.get(position).name
-            var itemPosition=position.toString()
+            val a =artList.get(position).name
+            val itemPosition=position.toString()
 
             Toast.makeText(holder.binding.root.context,a+" Sepete eklendi.",Toast.LENGTH_SHORT).show()
 
